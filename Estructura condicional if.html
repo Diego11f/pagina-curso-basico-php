@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE>Operadores</TITLE>
+</HEAD>
+<BODY>
+<fieldset>
+<h2 align="center"><FONT COLOR="FF0000" SIZE="6" FACE="Arial">Estructura condicional if</FONT></h2>   
+<FONT COLOR="#000000">
+<code><pre class="php_intro3">
+
+En PHP existen una serie de instrucciones que permiten tomar decisiones lógicas cuando programamos: estas instrucciones, comunes a 
+distintos lenguajes de programación, se suelen denominar de forma general "condicionales".
+
+-if...else
+
+-if...elseif...else
+
+-switch
+
+<FONT COLOR="#0000CD">CONDICIONAL IF…ELSE EN PHP</FONT>
+
+Estas instrucciones son quizás las más usadas de todos los lenguajes de programación, ya que son las más básicas. IF (en español: si…) ELSE 
+(en español: sino…). La estructura general de un condicional if else es la siguiente:
+<code><pre class="php_intro3">	
+<h2 align="left"> <FONT COLOR="#000000"><b>EJEMPLO:</b></h2>
+if(expresión) {
+
+... sentencias 1, 2, 3 … ;
+
+} else {
+
+... sentencias A, B, C …;
+
+}
+</pre></code>
+
+<FONT COLOR="#0000CD">CONDICIONALES IF...ELSE IF...ELSE EN PHP</FONT>
+
+La estructura de estas instrucciones viene a ser muy similar que la anterior. Su significado: “Si ocurre esto, haz esto, sino si ocurre esta otra cosa, 
+haz esto otro, sino si ocurre esta otro cosa, haz …”. La estructura general de un condicional if else if [else] es:
+
+<h2 align="left"> <FONT COLOR="#000000"><b>EJEMPLO:</b></h2>
+if(expresión) {
+
+... sentencias 1, 2, 3, …;
+
+} else if(expresión) {
+
+... sentencias A, B, C, …;
+
+} else {
+
+... sentencias M, N, O, …;
+
+}
+</pre></code>
+
+Esta es la síntaxis con la que debe ser usada else if. Un else if se ejecutará, siempre y cuando, no haya alguna respuesta verdadera en el if o else 
+if anterior; luego de que se llega al final de los else if, y ninguno ha sido verdadero, se ejecutará lo que está dentro del else final.
+
+Pueden haber varios else if, pero estos están siempre dentro de un if y terminarán con un else (sólo uno) final.
+
+Escribe este código en un editor como Notepad++ y guárdalo con un nombre de archivo como ejemplo3.php. A continuación, sube el fichero al servidor y 
+visualiza el resultado.
+<h2 align="left"> <FONT COLOR="#000000"><b>EJEMPLO:</b></h2>
+<table width="40%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<fieldset>
+<code><pre class="php_intro3">	
+
+&lt;html>
+
+&lt;head>
+  &lt;title>Problema&lt;/title>
+&lt;/head>
+
+&lt;body>
+  &lt;?php
+  $valor = rand(1, 100);
+  echo "El valor sorteado es $valor&lt;br>";
+  if ($valor <= 9) {
+    echo "Tiene un dígito";
+  } else {
+    if ($valor < 100) {
+      echo "Tiene 2 dígitos";
+    } else {
+      echo "Tiene 3 dígitos";
+    }
+  }
+  ?>
+&lt;/body>
+
+&lt;/html>
+
+</pre></code>
+</fieldset>
+</td>
+</tr>
+</table>
+</pre></code>
+</fieldset>
+</body>
+
+</html>

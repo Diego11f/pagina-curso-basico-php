@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE>FORMULARIO (control radio)</TITLE>
+</HEAD>
+
+<BODY>
+<fieldset>
+<h2 align="center"><FONT COLOR="FF0000" SIZE="6" FACE="Arial">FORMULARIO (control radio)</FONT></h2>  
+<FONT COLOR="#000000">	
+
+El control HTML radio generalmente se utiliza en conjunto con otros controles radio. Cuando agrupamos un conjunto de controles radio solo uno de ellos puede estar seleccionado y si seleccionamos otro se desmarca el actual.<br><br>
+
+Es importante notar que se trata nuevamente de un archivo HTML puro, que no tiene código PHP.
+La entrada de los dos números se efectua en dos controles<br><br>
+<code><pre class="php_intro3">
+   &lt;input type="text" name="valor1">                
+   &lt;input type="text" name="valor2">
+</pre>   <br><br>
+
+Es importante notar que cada text tiene un name DIFERENTE.
+Para seleccionar el tipo de operación a efectuar disponemos dos controles de tipo radio:<br><br>
+<code><pre class="php_intro3">
+    &lt;input type="radio" name="radio1" value="suma">sumar<br>
+    &lt;input type="radio" name="radio1" value="resta">restar
+</pre> <br><br>
+
+Es importante notar que los dos controles tienen el MISMO nombre. Esto es necesario para que el navegador sepa que los dos controles están relacionados (recordar que cuando uno selecciona un radio se debe deseleccionar el otro).<br><br></</FONT>
+
+<h2 align="left"> <FONT COLOR="#000000"><b>EJEMPLO:</b></h2>
+<table width="50%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<fieldset>	
+<code><pre class="php_intro3">
+
+&lt;html>
+
+&lt;head>
+  &lt;title>Problema</title>
+&lt;/head>
+
+&lt;body>
+  &lt;form action="pagina2.php" method="post">
+    Ingrese primer valor:
+    &lt;input type="text" name="valor1">
+    &lt;br>
+    Ingrese segundo valor:
+    &lt;input type="text" name="valor2">
+    &lt;br>
+    &lt;input type="radio" name="radio1" value="suma">sumar
+    &lt;br>
+    &lt;input type="radio" name="radio1" value="resta">restar
+    &lt;br>
+    &lt;input type="submit" name="operar">
+  &lt;/form>
+&lt;/body>
+
+&lt;/html>
+
+</pre></code>
+</fieldset>
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</fieldset>
+</BODY>
+</HTML>
+

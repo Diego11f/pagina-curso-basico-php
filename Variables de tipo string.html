@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<TITLE>Variables de tipo string</TITLE>
+</HEAD>
+<BODY>
+<fieldset>
+<h2 align="center"><FONT COLOR="FF0000" SIZE="6" FACE="Arial">Variables de tipo string</FONT></h2>  
+<code><pre>
+<FONT COLOR="1A1616" SIZE="3" FACE="Calibri (Cuerpo)">Una variable de este tipo puede almacenar una serie de caracteres.
+
+$cadena1="Hola";
+$cadena2="Mundo";
+echo $cadena1." ".$cadena2;
+Para concatenar string empleamos el operador . (punto)
+
+Tengamos en cuenta que el comando echo de más arriba lo podemos hacer más largo de la siguiente forma:
+
+echo $cadena1;
+echo " ";
+echo $cadena2;
+A medida que uno haga ejercicios podremos resumir en un solo comando echo la salida de múltiples variables.
+
+Cuando una cadena encerrada entre comillas dobles contiene una variable en su interior, ésta se trata como tal, por lo tanto se utilizará su contenido 
+para el almacenamiento:
+
+$dia=10;
+$fecha="Hoy es $dia";
+echo $fecha;
+En pantalla se muestra: Hoy es 10
+
+Es decir, en la cadena, se sustituye el nombre de la variable $dia, con el contenido de la misma.
+
+Una cadena se puede definir con las comillas simples (pero es importante tener en cuenta que no se sustituyen las variables si empleamos comillas simples):
+
+$nombre='juan carlos';
+Veremos que en muchos casos se utiliza el concepto de sustitución de variables dentro de un string en PHP por lo que nos acostumbraremos en un principio
+ a utilizar las comillas dobles para definir los string en nuestros programas.</FONT>
+
+<h2 align="left"> <FONT COLOR="#000000"><b>EJEMPLO:</b></h2>
+
+<table width="40%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<fieldset>  
+
+<code><pre class="php_intro3">  
+
+&lt;html>
+
+&lt;head>
+  &lt;title>Problema&lt;/title>
+&lt;/head>
+
+&lt;body>
+
+  &lt;?php
+  $cadena1 = "diego";
+  $cadena2 = "juan";
+  $cadena3 = "ana";
+  $todo = $cadena1 . $cadena2 . $cadena3 . "&lt;br>";
+  echo $todo;
+  $edad1 = 24;
+  echo $cadena1 . " tiene $edad1 de edad";
+  ?>
+&lt;/body>
+
+&lt;/html>
+
+  </fieldset>
+</td>
+</tr>
+</table>
+
+
+</body>
+
+</html>
+</FONT>
+
+</pre></code></p>
+</body>
+
+</html>
